@@ -1,0 +1,15 @@
+def get_attachment(attach_name)
+    return {} unless attach_name.attached?
+
+    { id: attach_name.id,
+      content_type: attach_name.content_type,
+      url: ENV['BASE_URL'] + Rails.application.routes.url_helpers.rails_blob_url(attach_name, only_path: true) }
+  end
+
+  def get_many_attachment(attach_names)
+    attach_names.map do |attach_name|
+      { id: attach_name.id,
+        content_type: attach_name.content_type,
+        url: ENV['BASE_URL'] + Rails.application.routes.url_helpers.rails_blob_url(attach_name, only_path: true) }
+    end
+  end
