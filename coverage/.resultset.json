@@ -1,26 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/pratik/jwt_demo/app/models/user.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/pratik/jwt_demo/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/home/pratik/jwt_demo/app/controllers/users_controller.rb": {
+      "/Users/mac/jwt_push_demo/app/controllers/comments_controller.rb": {
         "lines": [
           1,
           1,
@@ -30,11 +11,28 @@
           1,
           2,
           2,
+          2,
+          null,
+          null,
           1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
           null,
           1,
+          0,
+          0,
+          0,
           null,
           null,
+          1,
+          0,
+          0,
           null,
           null,
           1,
@@ -43,69 +41,49 @@
           null,
           null,
           1,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
+          1,
+          1,
           null,
           null,
           1,
-          0,
-          0,
-          null,
-          null,
-          null,
           1,
-          0,
+          1,
           null,
           null,
           null,
           1,
           null,
           1,
-          2,
+          1,
           null,
           null,
           null,
           1,
-          0,
+          8,
+          8,
+          null,
           null,
           null,
           null
         ]
       },
-      "/home/pratik/jwt_demo/app/controllers/application_controller.rb": {
+      "/Users/mac/jwt_push_demo/app/serializers/comment_serializer.rb": {
         "lines": [
           1,
           1,
           null,
-          1,
           null,
           1,
-          1,
+          0,
+          0,
           null,
-          1,
+          null,
+          null,
+          null,
+          null,
           null,
           1,
           4,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
           null,
           null,
           null,
@@ -113,14 +91,37 @@
           null
         ]
       },
-      "/home/pratik/jwt_demo/app/controllers/concerns/jwt_token.rb": {
+      "/Users/mac/jwt_push_demo/app/controllers/likes_controller.rb": {
         "lines": [
           1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          0,
           null,
           1,
           null,
+          null,
+          null,
           1,
+          0,
+          0,
+          null,
+          null,
           1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
           null,
           1,
           0,
@@ -129,30 +130,16 @@
           null,
           null,
           1,
-          0,
-          0,
           null,
-          null
-        ]
-      },
-      "/home/pratik/jwt_demo/app/serializers/user_serializer.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
           1,
           0,
           null,
           null,
           null,
-          null,
           1,
+          0,
+          0,
+          null,
           null,
           null,
           null,
@@ -161,206 +148,177 @@
           null
         ]
       },
-      "/home/pratik/jwt_demo/app/channels/application_cable/channel.rb": {
+      "/Users/mac/jwt_push_demo/app/controllers/posts_controller.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/channels/application_cable/connection.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/controllers/authentication_controller.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/controllers/comments_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
           null,
           null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
           null,
-          0,
-          null,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
           null,
           null,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          null,
+          null,
+          1,
+          6,
+          6,
           null,
           null
-        ],
-        "branches": {
-        }
+        ]
       },
-      "/home/pratik/jwt_demo/app/controllers/likes_controller.rb": {
+      "/Users/mac/jwt_push_demo/app/serializers/post_serializer.rb": {
         "lines": [
-          0,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
           0,
           0,
           null,
           null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
           null,
           null,
-          0,
-          0,
-          0,
-          0,
           null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
+          2,
           null,
           null,
-          0,
-          null,
-          0,
-          0,
-          0,
           null,
           null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/mac/jwt_push_demo/app/controllers/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          2,
+          2,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          3,
+          null,
+          null,
+          null,
+          1,
+          6,
+          null,
+          6,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/mac/jwt_push_demo/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          3,
           0,
-          0,
-          0,
-          0,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
           null,
           null,
           null,
           null,
           null
-        ],
-        "branches": {
-        }
+        ]
       },
-      "/home/pratik/jwt_demo/app/controllers/posts_controller.rb": {
+      "/Users/mac/jwt_push_demo/app/admin/admin_users.rb": {
         "lines": [
           0,
           0,
-          0,
-          null,
-          null,
           null,
           0,
           0,
@@ -370,18 +328,6 @@
           0,
           0,
           0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
           0,
           null,
           0,
@@ -392,112 +338,7 @@
           0,
           0,
           0,
-          null,
-          null,
           0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/helpers/application_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/helpers/authentication_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/helpers/comments_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/helpers/likes_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/helpers/posts_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/helpers/users_helper.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/jobs/application_job.rb": {
-        "lines": [
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/mailers/application_mailer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/models/comment.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          null,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/home/pratik/jwt_demo/app/models/like.rb": {
-        "lines": [
           0,
           0,
           0,
@@ -508,13 +349,23 @@
         "branches": {
         }
       },
-      "/home/pratik/jwt_demo/app/models/post.rb": {
+      "/Users/mac/jwt_push_demo/app/admin/comments.rb": {
         "lines": [
           0,
-          0,
-          0,
-          0,
-          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           0
@@ -522,33 +373,390 @@
         "branches": {
         }
       },
-      "/home/pratik/jwt_demo/app/serializers/comment_serializer.rb": {
+      "/Users/mac/jwt_push_demo/app/admin/dashboard.rb": {
+        "lines": [
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/admin/likes.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/admin/posts.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/admin/users.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/channels/application_cable/channel.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/channels/application_cable/connection.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/controllers/application_controller.rb": {
         "lines": [
           0,
           0,
           null,
-          null,
           0,
-          0,
-          0,
-          null,
-          null,
           null,
           0,
           0,
           null,
+          0,
+          null,
+          0,
           0,
           0,
           0,
           0,
           null,
           null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
           null
         ],
         "branches": {
         }
       },
-      "/home/pratik/jwt_demo/app/serializers/like_serializer.rb": {
+      "/Users/mac/jwt_push_demo/app/controllers/authentication_controller.rb": {
+        "lines": [
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/controllers/concerns/jwt_token.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/helpers/application_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/helpers/authentication_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/helpers/comments_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/helpers/likes_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/helpers/posts_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/helpers/users_helper.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/mailers/user_mailer.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/models/admin_user.rb": {
+        "lines": [
+          0,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/models/application_record.rb": {
+        "lines": [
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/models/comment.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/models/like.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/models/post.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/models/user.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/mac/jwt_push_demo/app/serializers/like_serializer.rb": {
         "lines": [
           0,
           0,
@@ -562,50 +770,21 @@
         "branches": {
         }
       },
-      "/home/pratik/jwt_demo/app/serializers/post_serializer.rb": {
+      "/Users/mac/jwt_push_demo/app/serializers/postupdate_serializer.rb": {
         "lines": [
           0,
           0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          null,
-          null,
           0
         ],
         "branches": {
         }
       },
-      "/home/pratik/jwt_demo/app/serializers/postupdate_serializer.rb": {
+      "/Users/mac/jwt_push_demo/app/sidekiq/print_job.rb": {
         "lines": [
+          0,
+          0,
+          null,
+          0,
           0,
           0,
           0
@@ -614,6 +793,6 @@
         }
       }
     },
-    "timestamp": 1679917684
+    "timestamp": 1681115833
   }
 }

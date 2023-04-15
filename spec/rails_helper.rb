@@ -1,5 +1,6 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require 'spec_helper'
+require 'shoulda/matchers'
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
 # Prevent database truncation if the environment is production
@@ -42,6 +43,8 @@ RSpec.configure do |config|
   # examples within a transaction, remove the following line or assign false
   # instead of true.
   config.use_transactional_fixtures = true
+# rails_helper.rb
+  config.infer_spec_type_from_file_location!
 
   # You can uncomment this line to turn off ActiveRecord support entirely.
   # config.use_active_record = false
@@ -59,7 +62,7 @@ RSpec.configure do |config|
   #
   # The different available types are documented in the features, such as in
   # https://relishapp.com/rspec/rspec-rails/docs
-  config.infer_spec_type_from_file_location!
+  
 
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!

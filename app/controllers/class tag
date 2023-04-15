@@ -1,0 +1,18 @@
+class tag
+has_many:artist
+  has_many :songs  through:artist
+end
+
+class songs 
+ has_many :tag through:artist
+ 
+end
+
+class artist
+belongs_to:tag
+belongs_to:song
+
+end
+
+
+

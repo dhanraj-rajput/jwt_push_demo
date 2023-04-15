@@ -1,6 +1,6 @@
 class UserSerializer < ActiveModel::Serializer
 
-  attributes :id, :email, :profile
+  attributes :id, :email,:user_name, :profile
 
    attribute :recently_joined? do |ssd|
     Date.today.prev_month < object.created_at

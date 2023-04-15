@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
 	include JwtToken
 
-	before_action :authenticate_user
+	before_action :authenticate_user, except: :admin
 	before_action :set_env_base_url
 
 	private

@@ -1,5 +1,5 @@
 class CommentSerializer < ActiveModel::Serializer
-  attributes :id,  :post_id, :text, :created_at, :updated_at, :replies, :text
+  attributes :id,  :post_id, :text, :created_at, :updated_at, :reply_id, :text
 
 
     def replies

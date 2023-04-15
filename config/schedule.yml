@@ -1,0 +1,3 @@
+my_first_job:
+    cron: "*/1 * * * *" # it will retrive data every 1 minuts
+    class: "PrintJob"

@@ -1,12 +1,10 @@
 class LikesController < ApplicationController
 	before_action :authenticate_user, only: [:create]
-	before_action :find_like, only: [:show, :update, :destroy], only: [:post]
+	before_action :find_like, only: [:show, :update, :destroy]
 
 
 	def create
-
-		@like =Like.create(text:params[:text],user_id: @current_user.id, post_id:params[:post_id],
-			comment_id:params[:comment_id])
+		@like =Like.create(text:params[:text],user_id: @current_user.id, post_id:params[:post_id],comment_id:params[:comment_id])
 		if @like.save
 			render json:  @like,  status: 201
 		else
@@ -14,37 +12,37 @@ class LikesController < ApplicationController
 		end
 	end
 
-
 	def index
-	 	@like = Like.all
-	 	 render json: @like, status: :ok
+	 @like = Like.all
+	 render json: @like, status: :ok
 	end
 
 	def show
-		render json: @like, status: 200
+	 @like = Like.find_by(id: params[:id])
+	 render json: @like, status: 200
 	end
 
 	def update
-	
-		unless @like.update(like_params)
-			render json: {erors: @like.errors.full_messages}, status: 503
-		end
+	 @like.update(like_params)
+	 render json: {message: 'like successfuly updated.'}, status: 200
 	end
 
 	def destroy
-		@like.destroy
+	 @like.destroy
+	 render json: { message: 'like successfuly deleted.'}, status: 200
 	end
 
 
   private
 
   def like_params
-  	params.permit(:text)
+  	params.permit(:text, :comment_id, :post_id)
   end
 
 
-   def find_like
-  	@like = Like.find(params[:id])
+  def find_like
+   @like = Like.find_by(id: params[:id])
+  	return render json: {message: "like with id #{params[:id]} not found"}, status:404 unless @like
   end
 end
 

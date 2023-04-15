@@ -1,5 +1,5 @@
 class LikeSerializer < ActiveModel::Serializer
-  attributes :id, :user_id, :post_id,  :recently_joined?
+  attributes :id, :user_id, :post_id  :recently_joined?
 
 
   def recently_joined?

@@ -1,11 +1,12 @@
 require 'rails_helper'
-# before(:each) do
-#   # @token = BuilderJsonWebToken::JasonWebToken.encode(@user.id)
-# end
+include JwtToken
 
 RSpec.describe "Users", type: :request do
-  describe "POST #create" do
+  let(:token) { jwd_encode({user_id: user.id}) }
+  let(:user) { FactoryBot.create(:user) }
 
+
+  describe "POST #create" do
     subject do
       post '/users', params: params
       response
@@ -32,10 +33,9 @@ RSpec.describe "Users", type: :request do
     end
   end
 
-
   describe 'GET #index' do
     it 'shold returns a list of all users' do
-      get '/users'
+      get '/users', headers: { Authorization: token }
        expect(response).to have_http_status(201)
       users = JSON.parse(response.body)
       expect(users)
@@ -43,17 +43,79 @@ RSpec.describe "Users", type: :request do
     end
   end
 
-  describe 'GET#show'  do
-    byebug
-    it 'should returns a user' do 
-      get '/users' 
-       expect(response).to have_http_status(201)
-       users=JSON.parse(response.body)
-       expect(users)
-       expect(user.find_by?)
-     end
-   end
+  describe "GET #show" do
+    subject do
+      get "/users/#{id}", headers: { Authorization: token }
+      response
+    end
+
+    let(:id) { user.id }
+
+    context "With valid params" do
+      it "should returns record" do
+        expect(subject).to have_http_status(200)
+      end
+    end
+
+
+    context "With invalid params" do
+      let(:id) { 'xxx' }
+      it "should return not" do
+        expect(subject).to have_http_status(404)
+      end
+    end
+  end  
+
+  describe "PUT #update" do
+    subject do
+      put "/users/#{id}", headers: { Authorization: token }
+      response
+    end
+
+    context "With valid params" do
+      let(:id) { user.id }
+      it "should update record" do
+        expect(subject).to have_http_status(200)
+      end
+    end
+
+
+    context "With invalid params" do
+      let(:id) { 'aaa' }
+      it "should return not update" do
+        expect(subject).to have_http_status(404)
+      end
+    end
+  end
+
+ 
+  describe "DELETE #destroy" do
+    subject do
+      delete "/users/#{id}", headers: { Authorization: token }
+      response
+    end
+
+    context "With valid params" do
+      let(:id) { user.id }
+      it "should delete record" do
+        expect(subject).to have_http_status(200)
+      end
+    end
+
+
+    context "With invalid params" do
+      let(:id) { 'aaa' }
+      it "should record not delete" do
+        expect(subject).to have_http_status(404)
+      end
+    end
+  end
 end
+
+
+
+
+
 
 
 

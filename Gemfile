@@ -69,6 +69,17 @@ group :development do
   # gem "spring"
 end
 
+  #job
+  
+  gem "sidekiq"
+  gem "sidekiq-cron"
+
+  #active admin
+  gem 'activeadmin'
+  gem 'sassc-rails'
+
+
+
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
@@ -77,7 +88,11 @@ group :test do
   gem "webdrivers"
   #Use jwt gem for token-based authentication
   gem 'jwt'
+  gem 'shoulda-matchers'
   #Use activemodel has secure_password
+  gem 'factory_bot_rails'
   gem 'bcrypt', '~> 3.1.7'
   gem 'simplecov', require: false
 end
+
+

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-	skip_before_action :authenticate_user, only: [:create, :index, :show]
-	before_action :find_user, only: [ :update, :destroy]
+	skip_before_action :authenticate_user, only: [:create]
+	before_action :find_user, only: [:show, :update, :destroy]
 
 
 	def create
@@ -19,25 +19,19 @@ class UsersController < ApplicationController
 	end
 
 	def show
-
-		@user = User.find_by(id: params[:id])
-		if @user.present?
-		render json: @user, status: 200
-	  else
-	  	render json: {message: "user with id #{params[:id]} not found"}, status:404
-	  end
+	  @user = User.find_by(id: params[:id])
+	  render json: @user, status: 200
 	end
 
 	def update
-		unless @user.update(user_params)
-			render json: {erors: @user.errors.full_messages}, status: 503
-		end
+		@user.update(user_params)
+		render json: {message: 'user successfuly updated.'}, status: 200
 	end
-
+ 
 	def destroy
 		@user.destroy
+		render json: { message: 'user successfuly deleted.'}, status: 200
 	end
-
 
   private
 
@@ -47,7 +41,9 @@ class UsersController < ApplicationController
 
 
    def find_user
-  	@user = User.find(params[:id])
+  	@user = User.find_by(id: params[:id])
+
+  	return render json: {message: "user with id #{params[:id]} not found"}, status:404 unless @user
   end
 
 end

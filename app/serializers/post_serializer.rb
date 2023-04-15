@@ -1,6 +1,6 @@
 class PostSerializer < ActiveModel::Serializer
   attributes :id, :user_id, :created_at, :updated_at, :images, :likes_count, :comments_count,
-  :user
+  :user ,:description
 
   attribute :recently_joined? do |asd|
     Date.today.prev_month < object.created_at
@@ -30,7 +30,5 @@ class PostSerializer < ActiveModel::Serializer
 
    def user
     object.user
-  end
-  
-  
-  end
+  end 
+end

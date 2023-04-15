@@ -1,38 +1,34 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user, only: [:create]
+    before_action :authenticate_user, only: [:create]
 	before_action :find_post, only: [:show, :update, :destroy]
 
 
 
 	def create
 		@post = @current_user.posts.new(post_params)
-		if @post.save
-			render json: PostSerializer.new(@post).as_json, status: :ok
-		else
-			render json: {erors: @post.errors.full_messages}, status: 503
-		end
+	  @post.save
+	  render json: PostSerializer.new(@post).as_json, status: :ok
 	end
 
 
 	def index
 	 	@post = Post.all
-	 	 render json: @post, status: :ok
-
+	 	render json: @post, status: :ok
 	end
 
 	def show
-		render json: @post, status: 200
+		@post = Post.find_by(id: params[:id])
+	  render json: @post, status: 200
 	end
 
 	def update
-	
-		unless @current_user.post.update(post_params)
-			render json: {erors: @post.errors.full_messages}, status: 503
-		end
+		@post.update(post_params)
+		render json: {message: 'post successfuly updated.'}, status: 200
 	end
 
 	def destroy
 		@post.destroy
+		render json: { message: 'post successfuly deleted.'}, status: 200
 	end
 
 
@@ -44,6 +40,7 @@ class PostsController < ApplicationController
 
 
    def find_post
-  	@post = Post.find(params[:id])
+  	@post = Post.find_by(id: params[:id])
+  	return render json: {message: "post with id #{params[:id]} not found"}, status:404 unless @post
   end
 end
